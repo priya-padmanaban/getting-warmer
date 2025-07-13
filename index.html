@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Getting Warmer</title>
+  <style>
+    body { background: #111; color: white; font-family: sans-serif; text-align: center; }
+    #game {
+      width: 800px;
+      height: 600px;
+      border: 4px solid white;
+      margin: 30px auto;
+      position: relative;
+      background-color: grey;
+    }
+    #player {
+      position: absolute;
+      font-size: 2rem;
+      transition: transform 0.05s;
+    }
+    #timer, #best {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔍 Getting Warmer</h1>
+  <div id="timer">Time: 0.0s</div>
+  <div id="best">Best Time: —</div>
+  <div id="game">
+    <div id="player">🧍</div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
