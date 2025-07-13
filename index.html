@@ -12,14 +12,28 @@
       margin: 30px auto;
       position: relative;
       background-color: grey;
+      overflow: hidden;
     }
     #player {
       position: absolute;
       font-size: 2rem;
       transition: transform 0.05s;
+      z-index: 2;
     }
-    #timer, #best {
+    .obstacle {
+      position: absolute;
+      font-size: 2rem;
+      pointer-events: none;
+    }
+    #timer, #best, #reset {
       margin: 10px;
+    }
+    #reset {
+      padding: 5px 10px;
+      background: #333;
+      color: white;
+      border: 1px solid white;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -27,6 +41,7 @@
   <h1>🔍 Getting Warmer</h1>
   <div id="timer">Time: 0.0s</div>
   <div id="best">Best Time: —</div>
+  <button id="reset">Reset</button>
   <div id="game">
     <div id="player">🧍</div>
   </div>
